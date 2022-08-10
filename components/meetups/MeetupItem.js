@@ -1,17 +1,12 @@
 import { Router, useRouter } from "next/router";
 import ListItem from "@mui/material/ListItem";
 import Box from "@mui/material/Box";
-// import ImageListItem from "@mui/material/ImageListItem";
 import { CardMedia } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
-
-// import Card from "../ui/Card";
-// import { BSONRegExp } from "mongodb";
-// import styles from "./MeetupItem.module.css";
 
 function MeetupItem(props) {
   const router = useRouter();

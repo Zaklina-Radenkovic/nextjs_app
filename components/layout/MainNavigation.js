@@ -1,6 +1,4 @@
 import NextLink from "next/link";
-// import classes from "./MainNavigation.module.css";
-// import { AppBar, Toolbar, Typography } from "@mui/material/AppBar";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";

@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { Stack, TextField, Button } from "@mui/material";
 
 import Card from "../ui/Card";
-import classes from "./NewMeetupForm.module.css";
 
 function NewMeetupForm(props) {
   const titleInputRef = useRef();
