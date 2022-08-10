@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', 'Lato', sans-serif;
+  font-family: "Open Sans", "Lato", sans-serif;
 }
 
 h1,
@@ -14,5 +14,57 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+.MuiPaper-root .MuiAppBar-root {
+  width: 100%;
+}
+
+.MuiImageListItem-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.MuiCardContent-root {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.MuiButtonBase-root {
+  font: inherit;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #77002e;
+  background-color: #77002e;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.MuiButtonBase-root:hover,
+.MuiButtonBase-root:active {
+  background-color: #a50e48;
+  border-color: #a50e48;
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+  justify-content: center;
+}
+
+.header_link:hover,
+.header_link:active {
+  color: white;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root .MuiFormLabel-root {
+  font-weight: bold;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: inherit;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: inherit;
 }

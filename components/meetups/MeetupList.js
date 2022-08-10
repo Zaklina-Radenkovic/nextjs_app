@@ -1,9 +1,17 @@
 import MeetupItem from "./MeetupItem";
-import classes from "./MeetupList.module.css";
+// import classes from "./MeetupList.module.css";
+import List from "@mui/material/List";
 
 function MeetupList(props) {
   return (
-    <ul className={classes.list}>
+    // <ul className={classes.list}>
+
+    <List
+      sx={{
+        margin: "0",
+        padding: "0",
+      }}
+    >
       {props.meetups.map((meetup) => (
         <MeetupItem
           key={meetup.id}
@@ -13,7 +21,8 @@ function MeetupList(props) {
           address={meetup.address}
         />
       ))}
-    </ul>
+    </List>
+    // </ul>
   );
 }
 
