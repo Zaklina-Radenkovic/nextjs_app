@@ -1,4 +1,7 @@
-import { Card, CardMedia, CardContent, Typography } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
 
 function MeetupDetail(props) {
   return (
@@ -19,7 +22,9 @@ function MeetupDetail(props) {
       <CardContent sx={{ textAlign: "center" }}>
         <Typography variant="h5">{props.title}</Typography>
         <Typography variant="body1">
-          <address>{props.address}</address>
+          {/* <address> */}
+          {props.address}
+          {/* </address> */}
         </Typography>
         <Typography variant="body2">{props.description}</Typography>
       </CardContent>

@@ -1,5 +1,7 @@
 import { useRef } from "react";
-import { Stack, TextField, Button } from "@mui/material";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 import Card from "../ui/Card";
 
@@ -61,18 +63,12 @@ function NewMeetupForm(props) {
       <form onSubmit={submitHandler}>
         <Stack spacing={3} sx={{ padding: "1rem" }}>
           <Stack spacing={2}>
-            <TextField
-              label="Meetup Title"
-              required
-              ref={titleInputRef}
-              MuiFormLabel-color="red"
-            />
+            <TextField label="Meetup Title" required ref={titleInputRef} />
             <TextField
               label="Meetup Image"
               type="url"
               required
               ref={imageInputRef}
-              MuiInputBase-colorPrimary="red"
             />
             <TextField
               label="Address"

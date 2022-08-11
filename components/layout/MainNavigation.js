@@ -23,7 +23,7 @@ function MainNavigation() {
 
     <AppBar
       position="static"
-      justifyContent="center"
+      // justifyContent="center"
       sx={{
         width: "100%",
         height: "5rem",
