@@ -69,7 +69,8 @@ function NewMeetupForm(props) {
               ref={titleInputRef}
               sx={{
                 ".MuiInputBase-input": { fontWeight: "bold" },
-                ".MuiOutlinedInput-notchedOutlined": {
+                ".MuiInputBase-input:focus": {
+                  outline: none,
                   borderColor: "inherit",
                   color: "inherit",
                 },
