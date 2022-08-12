@@ -70,7 +70,6 @@ function NewMeetupForm(props) {
               sx={{
                 ".MuiInputBase-input": { fontWeight: "bold" },
                 ".MuiInputBase-input:focus": {
-                  outline: none,
                   borderColor: "inherit",
                   color: "inherit",
                 },
