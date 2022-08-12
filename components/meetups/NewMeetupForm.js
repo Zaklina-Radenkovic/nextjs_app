@@ -67,7 +67,13 @@ function NewMeetupForm(props) {
               label="Meetup Title"
               required
               ref={titleInputRef}
-              sx={{ ".MuiInputBase-input": { fontWeight: "bold" } }}
+              sx={{
+                ".MuiInputBase-input": { fontWeight: "bold" },
+                ".MuiOutlinedInput-notchedOutlined": {
+                  borderColor: "inherit",
+                  color: "inherit",
+                },
+              }}
             />
             <TextField
               label="Meetup Image"
