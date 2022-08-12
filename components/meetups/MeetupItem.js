@@ -58,7 +58,7 @@ function MeetupItem(props) {
             <address>{props.address}</address>
           </Box>
 
-          <CardActions>
+          <CardActions padding="1.5rem">
             {/* <Box padding="1.5rem" component="div"> */}
             <Button
               // variant="text"
