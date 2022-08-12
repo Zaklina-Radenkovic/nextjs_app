@@ -59,11 +59,14 @@ function MeetupItem(props) {
           </Box>
 
           <CardActions>
-            <Box padding="1.5rem" component="div">
-              <Button variant="text" onClick={showDetailsHandler}>
-                Show Details
-              </Button>
-            </Box>
+            {/* <Box padding="1.5rem" component="div"> */}
+            <Button
+              // variant="text"
+              onClick={showDetailsHandler}
+            >
+              Show Details
+            </Button>
+            {/* </Box> */}
           </CardActions>
         </CardContent>
       </Card>
