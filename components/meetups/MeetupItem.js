@@ -60,10 +60,7 @@ function MeetupItem(props) {
 
           <CardActions padding="1.5rem">
             {/* <Box padding="1.5rem" component="div"> */}
-            <Button
-              // variant="text"
-              onClick={showDetailsHandler}
-            >
+            <Button variant="contained" onClick={showDetailsHandler}>
               Show Details
             </Button>
             {/* </Box> */}
