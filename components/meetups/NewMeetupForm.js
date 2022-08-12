@@ -63,7 +63,12 @@ function NewMeetupForm(props) {
       <form onSubmit={submitHandler}>
         <Stack spacing={3} sx={{ padding: "1rem" }}>
           <Stack spacing={2}>
-            <TextField label="Meetup Title" required ref={titleInputRef} />
+            <TextField
+              label="Meetup Title"
+              required
+              ref={titleInputRef}
+              sx={{ ".MuiInputBase-input": { fontWeight: "bold" } }}
+            />
             <TextField
               label="Meetup Image"
               type="url"
