@@ -58,7 +58,13 @@ function MeetupItem(props) {
             <address>{props.address}</address>
           </Box>
 
-          <CardActions sx={{ padding: "1.5rem", textAlign: "center" }}>
+          <CardActions
+            sx={{
+              padding: "1.5rem",
+              textAlign: "center",
+              justifyContent: "center",
+            }}
+          >
             {/* <Box padding="1.5rem" component="div"> */}
             <Button
               variant="contained"

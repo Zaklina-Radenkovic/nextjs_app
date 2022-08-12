@@ -86,7 +86,21 @@ function NewMeetupForm(props) {
             />
           </Stack>
           <Stack justifyContent="center">
-            <Button sx={{ alignSelf: "end" }}>Add Meetup</Button>
+            <Button
+              sx={{
+                alignSelf: "end",
+                color: "#fff",
+                backgroundColor: "#a50e48",
+                borderColor: "#a50e48",
+                fontWeight: "bold",
+                "&:hover": {
+                  backgroundColor: "#a50e48",
+                  borderColor: "#a50e48",
+                },
+              }}
+            >
+              Add Meetup
+            </Button>
           </Stack>
         </Stack>
       </form>
