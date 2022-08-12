@@ -58,7 +58,7 @@ function MeetupItem(props) {
             <address>{props.address}</address>
           </Box>
 
-          <CardActions padding="1.5rem">
+          <CardActions sx={{ padding: "1.5rem", textAlign: "center" }}>
             {/* <Box padding="1.5rem" component="div"> */}
             <Button
               variant="contained"
@@ -67,9 +67,14 @@ function MeetupItem(props) {
                 color: "#fff",
                 backgroundColor: "#a50e48",
                 borderColor: "#a50e48",
+                fontWeight: "bold",
+                "&:hover": {
+                  backgroundColor: "#a50e48",
+                  borderColor: "#a50e48",
+                },
               }}
             >
-              Show Detailss
+              Show Details
             </Button>
             {/* </Box> */}
           </CardActions>
