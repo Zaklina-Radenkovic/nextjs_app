@@ -43,30 +43,16 @@ h6 {
   font-weight: bold;
 }
 
-.MuiButtonBase-root:hover,
-.MuiButtonBase-root:active {
-  background-color: #a50e48;
-  border-color: #a50e48;
-}
-
-.css-1ujsas3 {
-  color: #fff;
-  background-color: #a50e48;
-  border-color: #a50e48;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.css-1t6e9jv-MuiCardActions-root {
-  justify-content: center;
-}
-
 .header_link:hover,
 .header_link:active {
   color: white;
 }
 
-.css-1u3bzj6-MuiFormControl-root-MuiTextField-root .MuiFormLabel-root {
+.MuiInputBase-input .MuiOutlinedInput-input {
+  font-weight: bold;
+}
+
+.MuiFormControl-root-MuiTextField-root .MuiFormLabel-root {
   font-weight: bold;
 }
 
