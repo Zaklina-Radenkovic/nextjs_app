@@ -23,7 +23,6 @@ function MainNavigation() {
 
     <AppBar
       position="static"
-      // justifyContent="center"
       sx={{
         width: "100%",
         height: "5rem",
@@ -40,6 +39,7 @@ function MainNavigation() {
               fontWeight: 700,
               fontSize: "2rem",
               color: "inherit",
+              fontSize: { md: "1.3rem" },
             }}
           >
             React Meetups
@@ -53,6 +53,7 @@ function MainNavigation() {
             sx={{
               fontWeight: 700,
               color: "#fcb8d2",
+              fontSize: { md: "1.3rem" },
             }}
           >
             <Stack spacing={5} direction="row">
