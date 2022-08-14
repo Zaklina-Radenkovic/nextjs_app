@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import { alpha, styled } from "@mui/material/styles";
 
 import Card from "../ui/Card";
 
@@ -29,6 +30,16 @@ function NewMeetupForm(props) {
     props.onAddMeetup(meetupData);
   }
 
+  const style = {
+    "& label.Mui-focused": {
+      color: "green",
+    },
+    "& .MuiOutlinedInput-root": {
+      "&.Mui-focused fieldset": {
+        borderColor: "green",
+      },
+    },
+  };
   return (
     // <Card>
     //   <form className={classes.form} onSubmit={submitHandler}>
@@ -80,6 +91,7 @@ function NewMeetupForm(props) {
               type="url"
               required
               ref={imageInputRef}
+              sx={style}
             />
             <TextField
               label="Address"
