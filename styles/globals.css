@@ -48,8 +48,8 @@ h6 {
   color: white;
 }
 
-.MuiInputBase-input .MuiOutlinedInput-input {
-  font-weight: bold;
+.MuiInputBase-input .Mui-focused {
+  border-color: red;
 }
 
 .MuiFormControl-root-MuiTextField-root .MuiFormLabel-root {
