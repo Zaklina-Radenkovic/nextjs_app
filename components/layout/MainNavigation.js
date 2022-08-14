@@ -39,7 +39,7 @@ function MainNavigation() {
               fontWeight: 700,
               fontSize: "2rem",
               color: "inherit",
-              fontSize: { md: "1.3rem" },
+              fontSize: { sm: "1.3rem", md: "2rem" },
             }}
           >
             React Meetups
@@ -53,7 +53,8 @@ function MainNavigation() {
             sx={{
               fontWeight: 700,
               color: "#fcb8d2",
-              fontSize: { md: "1.3rem" },
+              fontSize: { xs: "1rem", sm: "1.3rem", md: "1.6rem" },
+              padding: { xs: "16px", md: "0" },
             }}
           >
             <Stack spacing={5} direction="row">
