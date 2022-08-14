@@ -32,11 +32,11 @@ function NewMeetupForm(props) {
 
   const style = {
     "& label.Mui-focused": {
-      color: "green",
+      color: "inherit",
     },
     "& .MuiOutlinedInput-root": {
       "&.Mui-focused fieldset": {
-        borderColor: "green",
+        borderColor: "inherit",
       },
     },
   };
@@ -78,13 +78,7 @@ function NewMeetupForm(props) {
               label="Meetup Title"
               required
               ref={titleInputRef}
-              sx={{
-                ".MuiInputBase-input": { fontWeight: "bold" },
-                ".MuiInputBase-input:focus": {
-                  borderColor: "inherit",
-                  color: "inherit",
-                },
-              }}
+              sx={style}
             />
             <TextField
               label="Meetup Image"
@@ -98,6 +92,7 @@ function NewMeetupForm(props) {
               type="text"
               required
               ref={addressInputRef}
+              sx={style}
             />
             <TextField
               id="outlined-textarea"
@@ -106,6 +101,7 @@ function NewMeetupForm(props) {
               multiline
               rows={5}
               ref={descriptionInputRef}
+              sx={style}
             />
           </Stack>
           <Stack justifyContent="center">
