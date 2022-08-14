@@ -52,8 +52,9 @@ h6 {
   border-color: red;
 }
 
-.MuiFormControl-root-MuiTextField-root .MuiFormLabel-root {
-  font-weight: bold;
+.MuiFormControl-root-MuiTextField-root .MuiInputBase-input:focus {
+  border-color: red;
+  color: inherit;
 }
 
 .MuiFormLabel-root.Mui-focused {
