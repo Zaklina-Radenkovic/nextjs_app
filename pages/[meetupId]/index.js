@@ -10,6 +10,7 @@ function MeetupDetails(props) {
         <title>{props.meetupData.title}</title>
       </Head>
       <MeetupDetail
+        id={props.meetupData.id}
         image={props.meetupData.image}
         title={props.meetupData.title}
         address={props.meetupData.address}

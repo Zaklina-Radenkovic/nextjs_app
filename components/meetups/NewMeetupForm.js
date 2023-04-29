@@ -3,6 +3,7 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { alpha, styled } from "@mui/material/styles";
+import classes from "./MeetupDetail.module.css";
 
 import Card from "../ui/Card";
 
@@ -27,6 +28,7 @@ function NewMeetupForm(props) {
       description: enteredDescription,
     };
 
+    console.log(meetupData);
     props.onAddMeetup(meetupData);
   }
 
@@ -77,30 +79,34 @@ function NewMeetupForm(props) {
             <TextField
               label="Meetup Title"
               required
-              ref={titleInputRef}
+              inputRef={titleInputRef}
               sx={style}
+              id="title"
             />
             <TextField
               label="Meetup Image"
               type="url"
               required
-              ref={imageInputRef}
+              inputRef={imageInputRef}
               sx={style}
+              id="image"
             />
             <TextField
               label="Address"
               type="text"
               required
-              ref={addressInputRef}
+              inputRef={addressInputRef}
               sx={style}
+              id="address"
             />
             <TextField
-              id="outlined-textarea"
+              id="description"
+              // id="outlined-textarea"
               label="Description"
               required
               multiline
               rows={5}
-              ref={descriptionInputRef}
+              inputRef={descriptionInputRef}
               sx={style}
             />
           </Stack>
@@ -117,6 +123,7 @@ function NewMeetupForm(props) {
                   borderColor: "#a50e48",
                 },
               }}
+              type="submit"
             >
               Add Meetup
             </Button>
